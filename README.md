@@ -1,8 +1,6 @@
 # Tirocinio-Journal
 ---
-created: 2025-09-08T09:00:00+02:00
-modified: 2025-09-19T00:38:48+02:00
-type: Journal
+09/09/2025
 ---
 
 **Attività di studio dedicata alle caratteristiche dei database per la bioinformatica.**
@@ -14,30 +12,14 @@ https://bdb99.ucsd.edu/rwd/bind/index.jsp
 
 *Webinar 1: BindingDB: A Massive, Publicly Accessible, Knowledgebase of Protein-Ligand Binding Data, Mike Gilson*
 
-Esercitazione Colab
-
-*Analyze BindingDB data in Google Colab using this Python tool from Pat Walters*
-
-This tutorial shows how one can use the BindingDB database and a bit of Python scripting to quickly understand SAR in a pharmaceutical patent. The tutorial covers several patent-related tasks, including accessing BindingDB, exploring chemical scaffolds, performing R-group analyses, and identifying key SAR drivers.
-Pre trattamento dei modelli di rappresentazione delle molecole in funzione dell'adozione di algoritmi sequenziali
 
 ---
-created: 2025-09-09T13:30:00+02:00
-modified: 2025-09-09T16:51:23+02:00
-type: Journal
+10/09/2025
 ---
 
 Pre trattamento dei modelli di rappresentazione delle molecole in funzione dell'adozione di algoritmi sequenziali
 
----
-created: 2025-09-09T13:30:00+02:00
-modified: 2025-09-09T16:51:23+02:00
-type: Journal
----
-
-Pre trattamento dei modelli di rappresentazione delle molecole in funzione dell'adozione di algoritmi sequenziali
-
-Tokenizzazione in #SMILES
+Paper:Tokenizzazione in #SMILES
 PreProcessing.ipynb colab
 
 
@@ -46,9 +28,7 @@ Ucak, U.V., Ashyrmamatov, I. & Lee, J. Improving the quality of chemical languag
 https://www.biomedcentral.com/search?query=Tokenization+smiles&searchType=publisherSearch
 
 ---
-created: 2025-09-10T09:15:00+02:00
-modified: 2025-09-19T00:38:11+02:00
-type: Journal
+11/09/2025
 ---
 
 Preprocessing:Ipotesi di combinare data augmentation  con compensazione dei campioni sotto rappresentati
@@ -73,27 +53,21 @@ APE Tokenizer: You can find the APE tokenizer on GitHub, making it compatible wi
 Atom-in-SMILES: The AIS tokenizer is available on GitHub.
 DeepChem: This library also provides scientific tokenizers, some based on the Hugging Face transformers library, that can be used for chemical applications.
 ---
-created: 2025-09-11T08:30:00+02:00
-modified: 2025-09-19T00:36:58+02:00
-type: Journal
+12/09/2025
 ---
 
 Implementazione dataframe Smile 
-Ricerca metodi di tokenizzazione e costruzione vocabolario
+Ricerca metodi di tokenizzazione e costruzione vocaborio
 
----
-created: 2025-09-12T08:40:00+02:00
-modified: 2025-09-17T21:16:25+02:00
-type: Journal
----
-
-Leon, M., Perezhohin, Y., Peres, F. et al. Comparing SMILES and SELFIES tokenization for enhanced chemical language modeling. Sci Rep 14, 25016 (2024). https://doi.org/10.1038/s41598-024-76440-8
+Paper:Leon, M., Perezhohin, Y., Peres, F. et al. Comparing SMILES and SELFIES tokenization for enhanced chemical language modeling. Sci Rep 14, 25016 (2024). https://doi.org/10.1038/s41598-024-76440-8
 
 
 ---
-created: 2025-09-18T08:40:00+02:00
-modified: 2025-09-19T00:35:47+02:00
-type: Journal
+18/09/2025
 ---
+Esercitazione Colab
+
+*Analyze BindingDB data in Google Colab using this Python tool from Pat Walters*
+
 
 Implementazione della tokenizzazione APE

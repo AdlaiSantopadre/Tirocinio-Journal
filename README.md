@@ -14,11 +14,14 @@ Inoltre: una volta chiariti gli aspetti chiave della BlockChain, come viene effe
 Infine: definizione degli smart contracts da attivare su BlockChain. Quali tipologie prevedere? con che ricorrenza vengono attivati?
 
 
+**Link**
+*#ipfs privato*
+-https://www.excentio.com/articoli/creazione-di-una-rete-privata-ipfs/
+*#pinning ipfs  content via smartcontract*
 
-un po' di link:
+- https://github.com/elek/easypin
 
-https://www.excentio.com/articoli/creazione-di-una-rete-privata-ipfs/
-https://eleks.com/research/ipfs-network-data-replication/
+-https://eleks.com/research/ipfs-network-data-replication/
 
 - Qui c'è una descrizione del processo e anche un link al tutorial video
 (anche se usano come tool per compilare e fare deploy in locale dello

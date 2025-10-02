@@ -1,8 +1,7 @@
-
 # Tirocinio-Journal
 
 ---
-09/09/2025
+2/10/2025
 ---
 Progettazione integrazione BlockChain di log&trace in infrastruttura DCMS 
 
@@ -36,4 +35,3 @@ link hadhat: https://hardhat.org/
 
 PAPER:
 https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9705291
-

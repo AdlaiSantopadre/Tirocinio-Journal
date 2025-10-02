@@ -25,6 +25,7 @@ https://eleks.com/research/ipfs-network-data-replication/
 smart contract un tool che si chiama truffle, che ora non è più usato in
 genere, meglio usare hardhat)
 https://elearning.di.unipi.it/pluginfile.php/31679/mod_resource/content/3/06-05-20-4-Eth%20IPFS.pdf
+
 link hadhat: https://hardhat.org/
 
 

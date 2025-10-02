@@ -1,4 +1,5 @@
-# Tirocinio-Journal
+# Dal 9 al 18 Settembre
+
 ---
 09/09/2025
 ---

@@ -1,83 +1,39 @@
+
 # Tirocinio-Journal
+
 ---
 09/09/2025
 ---
+Progettazione integrazione BlockChain di log&trace in infrastruttura DCMS 
 
-**Attività di studio dedicata alle caratteristiche dei database per la bioinformatica.**
+Problemi progettuali da affrontare
 
-BindingBDB
-"The first public molecular recognition database, BindingDB supports research, education and practice in drug discovery, pharmacology and related fields."
+L’attività definisce le caratteristiche dettagliate rispetto alla implementazione dei nodi BlockChain, la definizione e la modalità di scambio dati della rete peer to peer , il meccanismo del consenso e la distributed ledger sulle macchine endpoint previste di DCMS. Che tecnologia di crittografia per la BC1 viene utilizzata? dove risiedono i nodi della rete rispetto agli elementi dell'architettura DCMS? Che tipologia di algoritmo per la BC1 viene scelto? Come viene generato il consenso in presenza di nodi che è possibile “spegnere”? I nodi della rete mantengono un ledger completo o è prevista una separazione tra nodi con ledger completo e nodi con ledger parziale? La BlockChain è privata o pubblica? In che limiti viene definita privata?
 
-https://bdb99.ucsd.edu/rwd/bind/index.jsp
+Inoltre: una volta chiariti gli aspetti chiave della BlockChain, come viene effettuato il deploy distribuito?
 
-*Webinar 1: BindingDB: A Massive, Publicly Accessible, Knowledgebase of Protein-Ligand Binding Data, Mike Gilson*
-
-
----
-10/09/2025
----
-
-Pre trattamento dei modelli di rappresentazione delle molecole in funzione dell'adozione di algoritmi sequenziali
-
-Paper:Tokenizzazione in #SMILES
-PreProcessing.ipynb colab
+Infine: definizione degli smart contracts da attivare su BlockChain. Quali tipologie prevedere? con che ricorrenza vengono attivati?
 
 
-Ucak, U.V., Ashyrmamatov, I. & Lee, J. Improving the quality of chemical language model outcomes with atom-in-SMILES tokenization. J Cheminform 15, 55 (2023). https://doi.org/10.1186/s13321-023-00725-
 
-https://www.biomedcentral.com/search?query=Tokenization+smiles&searchType=publisherSearch
+un po' di link:
 
----
-11/09/2025
----
+https://www.excentio.com/articoli/creazione-di-una-rete-privata-ipfs/
+https://eleks.com/research/ipfs-network-data-replication/
 
-Preprocessing:Ipotesi di combinare data augmentation  con compensazione dei campioni sotto rappresentati
-
-Tokenizzazione: criticità della tokenizzazione SMILES.
-
-* ABOUT TOKENIZATION *
-For SMILES chemical tokens, the recommended tokenizers are APE (Atom Pair Encoding) and Atom-in-SMILES (AIS), which outperform traditional Byte Pair Encoding (BPE) by capturing deeper chemical context and ensuring structural integrity. APE is particularly suited for transformer-based models and is available through libraries like GitHub, while Atom-in-SMILES is a novel approach designed to handle complex SMILES tokens and can be found on GitHub.
-Traditional tokenization is insufficient for SMILES, related to:
-* Ambiguity and Inconsistency.
-The standard SMILES notation can represent the same molecule in multiple ways (e.g., "CCO" vs. "OCC" for ethanol), which creates inconsistencies for machine learning models.
-* Contextual Loss:
-Basic subword tokenizers like BPE often fail to maintain the contextual relationships between chemical elements within the SMILES string, leading to a loss of crucial chemical information.
-Recommended tokenization methods for SMILES:
-Atom Pair Encoding (APE):
-https://github.com/mikemayuare/apetokenizer
-This technique is specifically designed for SMILES and SELFIES. It works by encoding information in atom pairs, ensuring that tokens preserve chemical meaning and structural integrity, which significantly improves the performance of chemical language models.
-Atom-in-SMILES (AIS):
-This approach addresses limitations in traditional SMILES tokenization by eliminating ambiguities and capturing more detailed information about the chemical environment of atoms. The AIS tokenizer can even be hybridized with standard SMILES tokens to create more robust representations.
-Where to find and use these tokenizers:
-APE Tokenizer: You can find the APE tokenizer on GitHub, making it compatible with the Hugging Face Transformers library.
-Atom-in-SMILES: The AIS tokenizer is available on GitHub.
-DeepChem: This library also provides scientific tokenizers, some based on the Hugging Face transformers library, that can be used for chemical applications.
----
-12/09/2025
----
-
-Implementazione dataframe Smile 
-Ricerca metodi di tokenizzazione e costruzione vocaborio
-"Recommended tokenization methods for SMILES:
-Atom Pair Encoding (APE):
-https://github.com/mikemayuare/apetokenizer
-This technique is specifically designed for SMILES and SELFIES. It works by encoding information in atom pairs, ensuring that tokens preserve chemical meaning and structural integrity, which significantly improves the performance of chemical language models.
-Atom-in-SMILES (AIS):
-This approach addresses limitations in traditional SMILES tokenization by eliminating ambiguities and capturing more detailed information about the chemical environment of atoms. The AIS tokenizer can even be hybridized with standard SMILES tokens to create more robust representations.
-Where to find and use these tokenizers:
-APE Tokenizer: You can find the APE tokenizer on GitHub, making it compatible with the Hugging Face Transformers library.
-Atom-in-SMILES: The AIS tokenizer is available on GitHub.
-DeepChem: This library also provides scientific tokenizers, some based on the Hugging Face transformers library, that can be used for chemical applications."
-
-Paper:Leon, M., Perezhohin, Y., Peres, F. et al. Comparing SMILES and SELFIES tokenization for enhanced chemical language modeling. Sci Rep 14, 25016 (2024). https://doi.org/10.1038/s41598-024-76440-8
+- Qui c'è una descrizione del processo e anche un link al tutorial video
+(anche se usano come tool per compilare e fare deploy in locale dello
+smart contract un tool che si chiama truffle, che ora non è più usato in
+genere, meglio usare hardhat)
+https://elearning.di.unipi.it/pluginfile.php/31679/mod_resource/content/3/06-05-20-4-Eth%20IPFS.pdf
+link hadhat: https://hardhat.org/
 
 
----
-18/09/2025
----
-Esercitazione Colab
+- https://tooploox.com/using-ipfs-with-ethereum-for-data-storage
+- https://github.com/elek/easypin
+- https://github.com/textileio/textile
+- https://storage.chainsafe.io/
 
-*Analyze BindingDB data in Google Colab using this Python tool from Pat Walters*
+PAPER:
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9705291
 
-
-Implementazione della tokenizzazione APE

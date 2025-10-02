@@ -12,6 +12,3 @@ L’attività definisce le caratteristiche dettagliate rispetto alla implementaz
 Inoltre: una volta chiariti gli aspetti chiave della BlockChain, come viene effettuato il deploy distribuito?
 
 Infine: definizione degli smart contracts da attivare su BlockChain. Quali tipologie prevedere? con che ricorrenza vengono attivati?
-
-
-https://eleks.com/research/ipfs-network-data-replication/

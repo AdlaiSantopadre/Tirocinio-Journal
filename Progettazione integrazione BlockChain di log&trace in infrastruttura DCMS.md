@@ -1,9 +1,10 @@
 ---
 created: 2025-10-02T16:00:55+02:00
-modified: 2025-10-02T16:01:24+02:00
+modified: 2025-10-08T14:12:58+02:00
+type: Journal
 ---
 
-# Progettazione integrazione BlockChain di log&trace in infrastruttura DCMS 
+# Progettazione integrazione BlockChain di log&trace in infrastruttura DCMS
 
 Problemi progettuali da affrontare
 

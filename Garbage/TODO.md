@@ -1,6 +1,6 @@
 ---
 created: 2025-10-02T16:00:55+02:00
-modified: 2025-10-08T14:52:56+02:00
+modified: 2025-10-08T15:00:49+02:00
 ---
 
 # ANALISI DEI Requisiti
@@ -54,25 +54,13 @@ F7	Garantire segregazione logica dei dati tra strutture diverse	(E)
 
 4. Requisiti non funzionali
 
-ID	Tipo	Descrizione
+ID	Tipo~	Descrizione
 
-N1	Affidabilità	Nessuna perdita di dati o eventi di sanificazione
-N2	Sicurezza	Autenticazione e protezione delle informazioni su Blockchain
-N3	Scalabilità	Supporto a più dispositivi e sedi (E)
-N4	Tracciabilità	Audit completo delle operazioni (D)
-N5	Usabilità	Interfacce intuitive per operatori e auditor (1a, 2a)
-
-
-
----
-
-5. Requisiti di interfaccia
-
-API REST/MQTT tra DCMS e nodi IoT (SaniNode).
-
-Interfacce Web e Mobile per operatori e supervisori.
-
-Smart contract per la registrazione su Blockchain.
+N1	Affidabilità	~ Nessuna perdita di dati o eventi di sanificazione
+N2	Sicurezza	~Autenticazione e protezione delle informazioni su Blockchain
+N3	Scalabilità	~ Supporto a più dispositivi e sedi (E)
+N4	Tracciabilità	~ Audit completo delle operazioni (D)
+N5	Usabilità	~ Interfacce intuitive per operatori e auditor (1a, 2)
 
 
 

@@ -1,6 +1,6 @@
 ---
 created: 2025-10-02T16:00:55+02:00
-modified: 2025-10-08T14:38:18+02:00
+modified: 2025-10-08T14:52:56+02:00
 ---
 
 # ANALISI DEI Requisiti
@@ -24,13 +24,13 @@ L’analisi è preliminare e intende fornire una base comune di discussione.
 
 2. Stakeholder e attori
 
-Attore	Descrizione	Ruolo nel sistema
+Attore	 ~ Descrizione	~ Ruolo nel sistema
 
-Strutture sanitarie	Enti utilizzatori finali	Definiscono politiche e obiettivi di sanificazione
-Personale operativo	Addetti a pulizie/sanificazione	Esegue e registra le operazioni
-Responsabili tecnici / sanitari	Supervisori o auditor	Analizzano i dati, validano report
-Dispositivi IoT / robot UVC (SaniNode)	Sensori, robot, dispenser	Rilevano o eseguono azioni automatiche
-Sistema DCMS / Blockchain	Infrastruttura software	Coordina, archivia e traccia le operazioni
+Strutture sanitarie ~ Enti utilizzatori finali	~ Definiscono politiche e obiettivi di sanificazione
+Personale operativo~	Addetti a pulizie/sanificazione	~Esegue e registra le operazioni
+Responsabili tecnici/sanitari	~ Supervisori o auditor	~ Analizzano i dati, validano report
+Dispositivi IoT/robot UVC (SaniNode)	~Sensori, robot, dispenser	~Rilevano o eseguono azioni automatiche
+Sistema DCMS~	Infrastruttura software	~ Coordina, archivia e traccia le operazioni
 
 
 
@@ -38,12 +38,12 @@ Sistema DCMS / Blockchain	Infrastruttura software	Coordina, archivia e traccia l
 
 3. Requisiti funzionali
 
-ID	Descrizione	Fonte / Riferimento
+ID	Descrizione ~Riferimento al testo
 
-F1	Tracciare tutte le operazioni di sanificazione manuali e robotiche	(D)
-F2	Registrare dati provenienti da nodi IoT e robot UVC	(3a, 4a)
-F3	Associare a ogni evento luogo, tempo, operatore, dispositivo	testo progetto
-F4	Archiviare i dati su Blockchain per garantire immutabilità e resilienza	(D)
+F1	Tracciare tutte le operazioni di sanificazione manuali e robotiche	~ (D)
+F2	Registrare dati provenienti da nodi IoT e dagli agenti robotici a UVC ~	(3a, 4a)
+F3	Associare a ogni evento  luogo, tempo, operatore, dispositivo	(testo progetto)
+F4	Archiviare i dati in modo da garantire immutabilità e resilienza	(D)
 F5	Fornire dashboard e reportistica aggregata	(B)
 F6	Supportare la pianificazione di interventi mirati	(C)
 F7	Garantire segregazione logica dei dati tra strutture diverse	(E)

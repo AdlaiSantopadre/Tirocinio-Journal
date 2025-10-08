@@ -1,9 +1,100 @@
 ---
 created: 2025-10-02T16:00:55+02:00
-modified: 2025-10-08T14:21:18+02:00
+modified: 2025-10-08T14:38:18+02:00
 ---
 
 # ANALISI DEI Requisiti
+
+Analisi dei Requisiti – Versione Preliminare
+
+Progetto: SANICHAIN
+Sistema: DCMS – Disinfection and Cleaning Management System
+Versione: 0.1 (interlocutoria)
+
+
+---
+
+1. Scopo e contesto
+
+Questo documento analizza i requisiti dedotti dal testo progettuale SANICHAIN, che mira alla digitalizzazione dei processi di pulizia, sanificazione e disinfezione in ambienti clinici e ospedalieri.
+L’analisi è preliminare e intende fornire una base comune di discussione.
+
+
+---
+
+2. Stakeholder e attori
+
+Attore	Descrizione	Ruolo nel sistema
+
+Strutture sanitarie	Enti utilizzatori finali	Definiscono politiche e obiettivi di sanificazione
+Personale operativo	Addetti a pulizie/sanificazione	Esegue e registra le operazioni
+Responsabili tecnici / sanitari	Supervisori o auditor	Analizzano i dati, validano report
+Dispositivi IoT / robot UVC (SaniNode)	Sensori, robot, dispenser	Rilevano o eseguono azioni automatiche
+Sistema DCMS / Blockchain	Infrastruttura software	Coordina, archivia e traccia le operazioni
+
+
+
+---
+
+3. Requisiti funzionali
+
+ID	Descrizione	Fonte / Riferimento
+
+F1	Tracciare tutte le operazioni di sanificazione manuali e robotiche	(D)
+F2	Registrare dati provenienti da nodi IoT e robot UVC	(3a, 4a)
+F3	Associare a ogni evento luogo, tempo, operatore, dispositivo	testo progetto
+F4	Archiviare i dati su Blockchain per garantire immutabilità e resilienza	(D)
+F5	Fornire dashboard e reportistica aggregata	(B)
+F6	Supportare la pianificazione di interventi mirati	(C)
+F7	Garantire segregazione logica dei dati tra strutture diverse	(E)
+
+
+
+---
+
+4. Requisiti non funzionali
+
+ID	Tipo	Descrizione
+
+N1	Affidabilità	Nessuna perdita di dati o eventi di sanificazione
+N2	Sicurezza	Autenticazione e protezione delle informazioni su Blockchain
+N3	Scalabilità	Supporto a più dispositivi e sedi (E)
+N4	Tracciabilità	Audit completo delle operazioni (D)
+N5	Usabilità	Interfacce intuitive per operatori e auditor (1a, 2a)
+
+
+
+---
+
+5. Requisiti di interfaccia
+
+API REST/MQTT tra DCMS e nodi IoT (SaniNode).
+
+Interfacce Web e Mobile per operatori e supervisori.
+
+Smart contract per la registrazione su Blockchain.
+
+
+
+---
+
+6. Requisiti ipotizzati (da validare)
+
+ID	Ipotesi	Motivazione
+
+H1	Architettura modulare cloud–edge	Consente resilienza e isolamento locale
+H2	Ogni nodo IoT ha un identificativo univoco su Blockchain	Necessario per tracciabilità (D)
+H3	App mobile gestisce autenticazione e firma digitale	Richiesto per accountability
+
+
+
+---
+
+7. Prossimi passi
+
+Validazione dei requisiti con le controparti.
+
+Classificazione per priorità e rischio.
 
 CONTESTO e OBIETTIVI del PROGETTO:
 Con il progetto SANICHAIN intendiamo progettare e dimostrare soluzioni di digitalizzazione avanzata dei *processi di pulizia, sanificazione e disinfezione in ambienti clinici ed ospedalieri*, che possano integrare sia l’utilizzo di strumentazioni robotizzate quali ad es. le soluzioni robotizzate di sanificazione UVC “SanisLight” (ma non solo), sia ovviamente le operazioni svolte dal personale, al fine di *massimizzare efficienza dei processi*, *accountability*, *(A)possibilità di controllo e verifica*, *(B)disponibilità di dati aggregati semplici da visualizzare* e che consentano la *(C)programmazione e l’esecuzione di azioni di sanificazioni mirate e precise*. **Un aspetto chiave** di una soluzione di questo tipo è *(D)la tracciabilità e la resilienza* delle informazioni relative alle operazioni di sanificazione condotte: pensiamo alle necessità di accountability e alle possibilità di audit ottenibili ed esprimibili da uno strumento del genere. Proprio per queste ragioni, riteniamo che lo strumento tecnologico da implementare in tali soluzioni con assoluta priorità sia quello della **BlockChain (distributed ledger)**, che esprime in pieno le caratteristiche desiderate.

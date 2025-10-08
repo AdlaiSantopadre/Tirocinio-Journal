@@ -1,10 +1,9 @@
 ---
 created: 2025-10-03T20:06:55+02:00
-modified: 2025-10-08T13:32:21+02:00
-type: Journal
+modified: 2025-10-08T13:33:11+02:00
 ---
 
-#Besu#
+# Besu
 
 Besu, an LF Decentralized Trust project, is an open-source Ethereum client developed under the Apache 2.0 license and written in Java. In this workshop, you will learn the core concepts of Besu’s features and how to operate and manage a private network. Through four hands-on exercises, you will gain practical experience in deploying, updating, using, and monitoring a private Besu network.
 
